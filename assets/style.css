@@ -1,0 +1,162 @@
+:root{
+  --orange:#DF8250;
+  --orange-soft:#E89B6E;
+  --purple:#2E2159;
+  --purple-deep:#251A4A;
+  --navy:#1D2B3A;
+  --blue-light:#D9E7F7;
+  --blue-card:#E3EEFA;
+  --cream:#F6EFE6;
+  --wa:#25D366;
+  --heading:'Fredoka',sans-serif;
+  --body:'Quicksand',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--purple);background:var(--orange);font-size:17px;line-height:1.6}
+body.bg-navy{background:var(--navy)}
+body.bg-blue{background:var(--blue-light)}
+h1,h2,h3{font-family:var(--heading);font-weight:600;line-height:1.15}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 6%}
+
+/* ===== Asterisco decorativo ===== */
+.asterisk{position:absolute;width:150px;height:150px;color:var(--purple);z-index:2}
+
+/* ===== Nav ===== */
+header{position:sticky;top:0;z-index:50;background:var(--orange);box-shadow:0 1px 0 rgba(46,33,89,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 6%;max-width:1200px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo svg{width:34px;height:34px}
+.logo .name{font-family:var(--heading);font-size:30px;font-weight:500;letter-spacing:1px;line-height:1}
+.logo .sub{font-size:10px;letter-spacing:4px;font-weight:600}
+nav ul{display:flex;gap:32px;list-style:none}
+nav a{color:var(--purple);text-decoration:none;font-weight:600;font-size:15px}
+nav a:hover,nav a.active{text-decoration:underline}
+.burger{display:none;background:none;border:none;color:var(--purple);font-size:28px;cursor:pointer}
+
+/* ===== Hero ===== */
+.hero{position:relative;overflow:hidden;padding:60px 0 110px;background:var(--orange)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(38px,4.6vw,58px);color:var(--purple)}
+.btn{display:inline-block;background:var(--purple);color:var(--cream);font-family:var(--body);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:18px 64px;border-radius:999px;transition:transform .2s,background .2s}
+.btn:hover{background:var(--purple-deep);transform:translateY(-2px)}
+.hero .btn{margin:38px 0 30px}
+.social{display:flex;gap:14px}
+.social a{color:#fff;display:inline-flex}
+.social svg{width:22px;height:22px}
+.collage{position:relative}
+.collage .ph{clip-path:polygon(28% 2%,100% 0,96% 78%,64% 100%,8% 84%,0 22%);aspect-ratio:.92;background:linear-gradient(140deg,#c9c2b8,#8d94a0)}
+.collage img{width:100%;height:100%;object-fit:cover}
+.hero .asterisk{left:-55px;bottom:60px}
+
+/* ===== Encabezado de página interior ===== */
+.page-hero{padding:70px 0 10px;text-align:center}
+.page-hero h1{font-size:clamp(34px,4vw,48px);color:var(--blue-light)}
+
+/* ===== Banda de cita ===== */
+.quote{background:var(--purple);color:var(--blue-light);text-align:center;padding:130px 6%}
+.quote p{font-family:var(--heading);font-weight:400;font-size:clamp(22px,2.6vw,32px);max-width:780px;margin:0 auto;line-height:1.55}
+
+/* ===== Software a la medida ===== */
+.software{position:relative;overflow:hidden;padding:120px 0 150px;background:var(--orange)}
+.software .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.tilt{clip-path:polygon(6% 4%,94% 0,100% 92%,72% 96%,30% 100%,0 88%);aspect-ratio:.88;background:linear-gradient(150deg,#d8b28e,#a97c55);transform:rotate(-1deg)}
+.tilt img{width:100%;height:100%;object-fit:cover}
+.software h2{font-size:clamp(30px,3.2vw,40px);color:var(--blue-light)}
+.software h2 em{font-style:italic}
+.software p{color:var(--cream);margin-top:26px;max-width:520px;font-size:15.5px}
+.software .deco{position:absolute;right:-60px;bottom:-40px;width:340px;height:340px;opacity:.18;color:var(--cream)}
+
+/* ===== Servicios ===== */
+.services{padding:70px 0 130px;background:var(--orange)}
+.services h2{text-align:center;color:var(--blue-light);font-size:clamp(32px,3.6vw,44px);margin-bottom:70px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.card{background:var(--blue-card);display:flex;flex-direction:column}
+.card .im{aspect-ratio:1.25;background:linear-gradient(140deg,#d8c9b8,#98a4b0);overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover}
+.card .tx{padding:28px 26px 34px;text-align:center}
+.card h3{font-family:var(--body);font-weight:700;font-size:18px;margin-bottom:12px}
+.card p{font-size:15px}
+
+/* ===== Por qué elegirnos ===== */
+.why{background:var(--navy);padding:70px 0 130px}
+.why h2{text-align:center;color:var(--blue-light);font-size:clamp(32px,3.6vw,44px);margin-bottom:90px}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
+.ring{width:150px;height:150px;margin:0 auto 34px;border-radius:50%;border:3px solid transparent;background:linear-gradient(var(--navy),var(--navy)) padding-box,linear-gradient(135deg,#f0b98d,#8FA6C4) border-box;display:flex;align-items:center;justify-content:center}
+.ring svg{width:56px;height:56px;color:#8FA6C4}
+.feats h3{font-family:var(--body);font-weight:700;color:var(--blue-light);font-size:18px;margin-bottom:14px}
+.feats p{color:var(--blue-light);font-size:15px;max-width:230px;margin:0 auto}
+
+/* ===== Testimonios ===== */
+.testi{background:var(--blue-light);padding:70px 0 120px}
+.testi .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+.testi h2{color:var(--orange);font-size:clamp(32px,3.6vw,44px)}
+.trow{display:grid;grid-template-columns:180px 1fr;gap:28px;padding:26px 0}
+.trow + .trow{border-top:1px solid rgba(46,33,89,.12)}
+.trow h3{font-family:var(--body);font-weight:700;font-size:17px}
+.trow p{font-size:15.5px}
+
+/* ===== Cita con foto ===== */
+.photoquote{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#c98d64}
+.photoquote img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photoquote::after{content:"";position:absolute;inset:0;background:rgba(223,130,80,.55)}
+.photoquote p{position:relative;z-index:2;color:#fff;font-family:var(--body);font-weight:700;font-size:clamp(24px,3vw,34px);text-align:center;max-width:760px;padding:0 6%;line-height:1.5;text-shadow:0 1px 12px rgba(0,0,0,.18)}
+
+/* ===== Contacto ===== */
+.contact{background:var(--blue-light);position:relative;overflow:hidden;padding:80px 0 90px}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.contact h2{font-size:clamp(36px,4vw,52px)}
+.contact .lead{margin:14px 0 36px}
+.clabel{font-family:var(--heading);font-weight:600;font-size:19px;letter-spacing:.5px;margin-top:38px}
+.cval{margin-top:6px;font-size:16px}
+.cval a{color:var(--purple)}
+.contact .btn{color:var(--orange-soft)}
+.contact .social{margin-top:10px}
+.contact .social a{color:var(--purple)}
+.cimg{position:relative}
+.cimg .ph{clip-path:polygon(10% 4%,72% 0,100% 12%,92% 96%,40% 100%,14% 88%,0 40%);aspect-ratio:.94;background:linear-gradient(150deg,#cfd8cd,#97a29b)}
+.cimg img{width:100%;height:100%;object-fit:cover}
+.cimg .asterisk{left:-70px;bottom:70px}
+.map{background:var(--blue-light);padding:0 6% 110px}
+.map iframe{width:100%;max-width:1120px;height:420px;border:0;display:block;margin:0 auto;filter:saturate(.9)}
+
+/* ===== Footer ===== */
+footer{background:var(--purple);color:var(--blue-light);padding:60px 6% 40px}
+.finner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+footer .flogo{display:flex;align-items:center;gap:10px;color:#fff;margin-bottom:16px}
+footer .flogo svg{width:26px;height:26px}
+footer .flogo .name{font-family:var(--heading);font-size:22px;letter-spacing:1px;line-height:1}
+footer .flogo .sub{font-size:8px;letter-spacing:3px;font-weight:600}
+footer h4{font-family:var(--body);font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px;color:#fff}
+footer p,footer a{font-size:14.5px;color:var(--blue-light);text-decoration:none;line-height:1.9}
+footer a:hover{text-decoration:underline}
+footer ul{list-style:none}
+.copy{max-width:1120px;margin:44px auto 0;padding-top:22px;border-top:1px solid rgba(217,231,247,.25);font-size:12.5px;color:rgba(217,231,247,.7);text-align:center}
+
+/* ===== Botón WhatsApp ===== */
+.wa-btn{position:fixed;right:24px;bottom:24px;z-index:99;display:flex;align-items:center;gap:0;text-decoration:none}
+.wa-btn .bubble{width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,211,102,.45);transition:transform .2s;position:relative}
+.wa-btn .bubble::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--wa);animation:wa-pulse 2.4s ease-out infinite;z-index:-1}
+.wa-btn:hover .bubble{transform:scale(1.08)}
+.wa-btn svg{width:32px;height:32px;fill:#fff}
+.wa-btn .tip{background:#fff;color:#1d2b3a;font-size:13.5px;font-weight:600;padding:10px 16px;border-radius:12px;margin-right:12px;box-shadow:0 4px 16px rgba(0,0,0,.15);opacity:0;transform:translateX(8px);transition:opacity .3s,transform .3s;pointer-events:none;white-space:nowrap}
+.wa-btn.show-tip .tip,.wa-btn:hover .tip{opacity:1;transform:translateX(0)}
+@keyframes wa-pulse{0%{transform:scale(1);opacity:.6}70%{transform:scale(1.55);opacity:0}100%{transform:scale(1.55);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wa-btn .bubble::before{animation:none}}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .hero .wrap,.software .wrap,.testi .wrap,.contact .wrap{grid-template-columns:1fr}
+  .cards,.feats{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+  .trow{grid-template-columns:1fr;gap:8px}
+  .finner{grid-template-columns:1fr;gap:30px}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:var(--orange);flex-direction:column;gap:0;padding:10px 6% 24px;box-shadow:0 12px 20px rgba(0,0,0,.12)}
+  nav ul.open{display:flex}
+  nav li{padding:12px 0;border-bottom:1px solid rgba(46,33,89,.15)}
+  .burger{display:block}
+  .hero{padding-bottom:70px}
+  .hero .asterisk,.cimg .asterisk{left:-40px;width:110px;height:110px}
+  .wa-btn{right:16px;bottom:16px}
+  .wa-btn .tip{display:none}
+}
